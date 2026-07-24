@@ -10,10 +10,11 @@ spring:
 
   sql:
     init:
-      mode: always
+      mode: never
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
+    show-sql: true
 
     open-in-view: false
 
